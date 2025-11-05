@@ -9,6 +9,7 @@ public class Prob5 {
          double  montant=lire("entrer votre montant ");
          double  rabais=calculer(montant*pourcentRabais); 
          double total=(montant-rabais);
+         
          afficher(""+rabais);
          afficher(""+total );        
          scanner.close();           
