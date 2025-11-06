@@ -29,6 +29,9 @@ public class Prob3 {
         
   if (age1>age2) {
             afficher("L'âge de la première personne est la plus grande");
+            
+        }else if (age1==age2) {
+            afficher("les deux personne ont le même age");
         }else{
             afficher("L'âge de la deuxième personne est la plus grande" );
         }
