@@ -183,7 +183,7 @@ public class TP1 {
 
         do {
             System.out.print("Entrez un nombre entre 1 et 20 : ");
-            System.out.println(""+randomNum );
+            
             numUtilisateur = scanner.nextInt();
 
             if (numUtilisateur > randomNum) {
