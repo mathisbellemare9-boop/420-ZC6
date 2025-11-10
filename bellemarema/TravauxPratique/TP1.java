@@ -71,7 +71,7 @@ public class TP1 {
         String sMessage =" ";
 
 
-        while (dMontant- 100 >0) {
+        while (dMontant- 100 >=0) {
             dMontant -= 100;
             iCompteur++;
             
@@ -81,7 +81,7 @@ public class TP1 {
             iCompteur=0;            
         }
        
-        while (dMontant- 50 >0) {
+        while (dMontant- 50 >=0) {
             dMontant-=50;
             iCompteur++;
         }
@@ -90,7 +90,7 @@ public class TP1 {
             iCompteur=0;                      
         }
        
-        while (dMontant- 20 >0) {
+        while (dMontant- 20 >=0) {
             dMontant -= 20;
             iCompteur++;
 
@@ -99,7 +99,7 @@ public class TP1 {
             sMessage+= iCompteur+ "x20$ ";
             iCompteur=0;
         }
-        while (dMontant -10>0) {
+        while (dMontant- 10>=0) {
             dMontant -=10;
             iCompteur++;
                    
@@ -108,7 +108,7 @@ public class TP1 {
             sMessage += iCompteur+"x10$ ";
             iCompteur=0;
         }
-        while (dMontant-5>0) {
+        while (dMontant- 5>=0) {
             dMontant -=5;
             iCompteur++;
         }
@@ -116,7 +116,7 @@ public class TP1 {
             sMessage += iCompteur+"x5$ ";
             iCompteur=0;
         }
-         while (dMontant-2>0 ) {
+         while (dMontant- 2>=0) {
             dMontant -=2;
             iCompteur++;
         }
@@ -124,7 +124,7 @@ public class TP1 {
             sMessage += iCompteur+"x2$ ";
             iCompteur=0;
         }
-         while (dMontant-1>0 ) {
+         while (dMontant- 1>=0 ) {
             dMontant -=1;
             iCompteur++;
         }
@@ -132,7 +132,7 @@ public class TP1 {
             sMessage += iCompteur+"x1$ ";
             iCompteur=0;
         }
-         while (dMontant-0.25>0) {
+         while (dMontant- 0.25>=0) {
             dMontant -=0.25;
             iCompteur++;
         }
@@ -140,7 +140,7 @@ public class TP1 {
             sMessage += iCompteur+"x0,25$ ";
             iCompteur=0;
         }
-         while (dMontant-0.10>0) {
+         while (dMontant- 0.10>=0) {
             dMontant -=0.10;
             iCompteur++;
         }
@@ -148,7 +148,7 @@ public class TP1 {
             sMessage += iCompteur+"x0.10$ ";
             iCompteur=0;
         }
-         while (dMontant-0.05>0 ) {
+         while (dMontant- 0.05>=0 ) {
             dMontant -=0.05;
             iCompteur++;
         }
@@ -156,7 +156,7 @@ public class TP1 {
             sMessage += iCompteur+"x0.05$ ";
             iCompteur=0;
         }
-         while (dMontant-0.01>0 ) {
+         while (dMontant- 0.01>=0 ) {
             dMontant -=0.01;
             iCompteur++;
         }
