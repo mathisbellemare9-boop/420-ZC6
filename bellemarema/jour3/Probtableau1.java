@@ -1,4 +1,4 @@
-package bellemarema.jour3;
+
 
 import java.util.Scanner;
 

@@ -1,4 +1,5 @@
-package bellemarema.TravauxPratique;
+package TP;
+
 
 import java.util.Scanner;
 

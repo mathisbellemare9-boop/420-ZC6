@@ -1,4 +1,4 @@
-package bellemarema.jour3;
+
 
 public class ProbTable8 {
     public static void main(String[] args) {
@@ -21,14 +21,14 @@ public class ProbTable8 {
 			tableauMoyenneEtudiante[i] = moyEtu(tableauTp1[i], tableauTp2[i], tableauExamen1[i]);
 		}
 
-		System.out.println("Numero #8 - version A");
-		System.out.println("=======================");
 		
 		afficherMoy(tableauMoyenneEvaluation[0], "TP 1");
 		afficherMoy(tableauMoyenneEvaluation[1], "TP 2");
 		afficherMoy(tableauMoyenneEvaluation[2], "Examen 1");
 
-		System.out.println("=======================");
+		System.out.println();
+		System.out.println("Resultalts des etudiants:");
+		System.out.println("-----------------------");
 		
 		for (int i = 0; i < tableauEtudiant.length; i++)
 		{
