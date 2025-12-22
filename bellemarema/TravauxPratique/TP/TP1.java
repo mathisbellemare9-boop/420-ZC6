@@ -67,109 +67,39 @@ public class TP1 {
         return dMontant;
 
     }
-    public static void afficherArgent( double dMontant){
-        int iCompteur=0;
-        String sMessage =" ";
+    public static void afficherArgent(double dMontant) {
 
+    // Tableau à double entrée :
+    // [0] = valeur
+    // [1] = texte à afficher
+    double[][] tabValeurs = {
+        {100, 0}, {50, 0}, {20, 0}, {10, 0}, {5, 0},
+        {2, 0}, {1, 0}, {0.25, 0}, {0.10, 0}, {0.05, 0}, {0.01, 0}
+    };
 
-        while (dMontant- 100 >=0) {
-            dMontant -= 100;
-            iCompteur++;
-            
-        }
-        if (iCompteur >0) {
-            sMessage += iCompteur + "x100$ " ;
-            iCompteur=0;            
-        }
-       
-        while (dMontant- 50 >=0) {
-            dMontant-=50;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage+= iCompteur + "x50$ " ;   
-            iCompteur=0;                      
-        }
-       
-        while (dMontant- 20 >=0) {
-            dMontant -= 20;
-            iCompteur++;
+    String[] tabTexte = {
+        "100$", "50$", "20$", "10$", "5$",
+        "2$", "1$", "0.25$", "0.10$", "0.05$", "0.01$"
+    };
 
-        }
-        if (iCompteur>0) {
-            sMessage+= iCompteur+ "x20$ ";
-            iCompteur=0;
-        }
-        while (dMontant- 10>=0) {
-            dMontant -=10;
+    String sMessage = "";
+
+    for (int i = 0; i < tabValeurs.length; i++) {
+        int iCompteur = 0;
+
+        while (dMontant >= tabValeurs[i][0]) {
+            dMontant -= tabValeurs[i][0];
+            dMontant = Math.round(dMontant * 100.0) / 100.0; // évite les erreurs décimales
             iCompteur++;
-                   
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x10$ ";
-            iCompteur=0;
-        }
-        while (dMontant- 5>=0) {
-            dMontant -=5;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x5$ ";
-            iCompteur=0;
-        }
-         while (dMontant- 2>=0) {
-            dMontant -=2;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x2$ ";
-            iCompteur=0;
-        }
-         while (dMontant- 1>=0 ) {
-            dMontant -=1;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x1$ ";
-            iCompteur=0;
-        }
-         while (dMontant- 0.25>=0) {
-            dMontant -=0.25;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x0,25$ ";
-            iCompteur=0;
-        }
-         while (dMontant- 0.10>=0) {
-            dMontant -=0.10;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x0.10$ ";
-            iCompteur=0;
-        }
-         while (dMontant- 0.05>=0 ) {
-            dMontant -=0.05;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x0.05$ ";
-            iCompteur=0;
-        }
-         while (dMontant- 0.01>=0 ) {
-            dMontant -=0.01;
-            iCompteur++;
-        }
-        if (iCompteur>0) {
-            sMessage += iCompteur+"x0.01$ ";
-            iCompteur=0;
         }
 
-        System.out.println("vous avez : " + sMessage);
-
-
+        if (iCompteur > 0) {
+            sMessage += iCompteur + "x" + tabTexte[i] + " ";
+        }
     }
+
+    System.out.println("vous avez : " + sMessage);
+}
     
         
     
